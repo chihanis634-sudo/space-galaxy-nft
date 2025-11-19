@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Space Galaxy NFT - Mint Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo">🚀 Space Galaxy NFT</div>
+      <button id="connectButton" class="btn primary">Connect Wallet</button>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Explore The Space Galaxy</h1>
+          <p>
+            Mint unique <strong>Space Galaxy NFTs</strong> and join an exclusive
+            community of interstellar explorers.
+          </p>
+          <ul class="features">
+            <li>🔹 Limited supply: <span id="maxSupply">5555</span> NFTs</li>
+            <li>🔹 Fair mint price: <span id="mintPrice">0.01</span> ETH</li>
+            <li>🔹 Max per wallet: <span id="maxPerWallet">5</span></li>
+          </ul>
+        </div>
+
+        <div class="mint-card">
+          <h2>Mint Panel</h2>
+          <div class="status">
+            <span>Connected:</span>
+            <span id="walletAddress">Not connected</span>
+          </div>
+          <div class="status">
+            <span>Minted:</span>
+            <span><span id="totalSupply">0</span> / <span id="maxSupply2">5555</span></span>
+          </div>
+
+          <div class="status">
+            <span>Mint Status:</span>
+            <span id="mintStatus">Paused</span>
+          </div>
+
+          <div class="amount-row">
+            <button id="minusBtn" class="btn ghost">-</button>
+            <span id="mintAmount">1</span>
+            <button id="plusBtn" class="btn ghost">+</button>
+          </div>
+
+          <div class="total">
+            Total: <span id="totalPrice">0.01</span> ETH
+          </div>
+
+          <button id="mintButton" class="btn primary wide">
+            Mint Now
+          </button>
+
+          <div id="message" class="message"></div>
+        </div>
+      </section>
+
+      <section class="preview">
+        <h2>Collection Preview</h2>
+        <div class="grid">
+          <div class="nft-card">#001</div>
+          <div class="nft-card">#002</div>
+          <div class="nft-card">#003</div>
+          <div class="nft-card">#004</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © 2025 Space Galaxy NFT. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
